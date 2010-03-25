@@ -6,5 +6,5 @@ import views
 
 urlpatterns = patterns('',
     url(r'^survey/?$', views.index),
-    url(r'^survey/(\d+)/?$', views.profile)
+    url(r'^survey/(\d+)/?$', views.profile, name="profile")
 )

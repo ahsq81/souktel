@@ -16,7 +16,7 @@
     <tbody>
        {% for profile in profiles %}
         <tr>
-            <td><a href="survey/{{ profile.id }}"> {{ profile.first_name }}</a></td>
+            <td><a href="{% url profile profile.id %}"> {{ profile.first_name }}</a></td>
         </tr>
         {% endfor %}
     </tbody>
