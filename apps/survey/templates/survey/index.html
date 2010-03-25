@@ -1,0 +1,42 @@
+{% extends base_template %}
+
+{% block content %}
+
+{% if profiles %}
+<table border="1">
+    <tbody>
+        <tr>
+            <td>Male: {{ n_male }}</td>
+            <td>Female: {{ n_female }}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<table border="1">
+    <tbody>
+       {% for profile in profiles %}
+        <tr>
+            <td><a href="survey/{{ profile.id }}"> {{ profile.first_name }}</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<table border="1">
+    <tbody>
+        <tr>
+            <td>name :</td><td>{{ profile.first_name }} {{ profile.last_name }}</td>
+        </tr>
+         <tr>
+            <td>Gender :</td><td>{{ profile.sex }}</td>
+        </tr>
+         <tr>
+            <td>Age :</td><td>{{ profile.age }}</td>
+        </tr>
+        <tr>
+            <td>Date :</td><td>{{ profile.date }}</td>
+        </tr>
+        </tbody>
+</table>
+{% endif %}
+{% endblock %}
