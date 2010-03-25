@@ -4,24 +4,24 @@
 
 
 from django.db import models
-
+from django.utils.translation import ugettext_lazy as _
 
 class SrActivity(models.Model) :
 
-    code =   models.CharField(max_length=5, unique=True)
-    name =   models.CharField(max_length=20)
+    code =   models.CharField(max_length=5, unique=True,verbose_name=_(u"Activity Code"))
+    name =   models.CharField(max_length=20,verbose_name=_(u"Activity description"))
 
     def __unicode__(self):
 	    return u"%s (%s)" % (self.code, self.name)
 
 class SrProfile(models.Model) :
 
-    first_name = models.CharField(max_length=20)
-    last_name=   models.CharField(max_length=20)
-    sex=   models.CharField(max_length=1)
-    age=   models.DecimalField(max_digits=2, decimal_places=0)
-    activity=   models.ForeignKey(SrActivity,blank=True)
-    date = models.DateField()
+    first_name = models.CharField(max_length=20,verbose_name=_(u"the first name"))
+    last_name=   models.CharField(max_length=20,verbose_name=_(u"the last name"))
+    sex=   models.CharField(max_length=1,verbose_name=_(u"member gender"))
+    age=   models.DecimalField(max_digits=2, decimal_places=0,verbose_name=_(u"member age"))
+    activity=   models.ForeignKey(SrActivity,blank=True,verbose_name=_(u"Activity"))
+    date = models.DateField(verbose_name=_(u"Date of entry"))
 
     def __unicode__(self):
 	    return u"%s (%s)" % (self.first_name, self.last_name)

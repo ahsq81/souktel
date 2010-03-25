@@ -1,0 +1,121 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-25 11:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: app.py:37
+#, python-format
+msgid "System encountered an Error: %s"
+msgstr "خطأ في النظام:%s"
+
+#: app.py:43
+#, python-format
+msgid "Hello %s"
+msgstr "مرحبا %s"
+
+#: app.py:48
+msgid "help"
+msgstr "المساعدة"
+
+#: app.py:51
+msgid ""
+"INS f-name l-name (gend){M|F} age Activity; FIND activity find all member "
+"register with that activity; STAT return the number of register member"
+msgstr ""
+"سجل الاسم الاول الاسم الثاني  (الجنس) {ذ|ن} العمر الصفة; بحث الصفة => البحث "
+"عن جميع الاشخاص المشتركين بالصفة;الحاله لمعرفة عدد المسجلين"
+
+#: app.py:54
+msgid "INS"
+msgstr "سجل"
+
+#: app.py:57
+msgid "m"
+msgstr "ذ"
+
+#: app.py:57
+msgid "f"
+msgstr "ن"
+
+#: app.py:58
+msgid "Gendr not support"
+msgstr "الجنس ليس مدعوم"
+
+#: app.py:62 app.py:80
+#, python-format
+msgid "1-System encountered an Error: %s"
+msgstr "1- خطأ في النظام : %s"
+
+#: app.py:68
+msgid "Recourd saved.."
+msgstr "حفظ السجل .."
+
+#: app.py:70 app.py:100 app.py:111
+#, python-format
+msgid "2-System encountered an Error: %s"
+msgstr "2- خطأ في النظام: %s"
+
+#: app.py:73
+msgid "FIND"
+msgstr "بحث"
+
+#: app.py:98
+#, python-format
+msgid "The Result found:%s"
+msgstr "تم العثورعلى: %s"
+
+#: app.py:103
+msgid "stat"
+msgstr "الحالة"
+
+#: app.py:109
+#, python-format
+msgid "Number of entry:%s"
+msgstr "عدد النتائج: %s"
+
+#: models.py:12
+msgid "Activity Code"
+msgstr "رمز الصفة"
+
+#: models.py:13
+#, fuzzy
+msgid "Activity description"
+msgstr "وصف الصفة"
+
+#: models.py:20
+msgid "the first name"
+msgstr "الاسم الاول"
+
+#: models.py:21
+msgid "the last name"
+msgstr "الاسم الاخير"
+
+#: models.py:22
+msgid "member gender"
+msgstr "جنس العضو"
+
+#: models.py:23
+msgid "member age"
+msgstr "عمر العضو"
+
+#: models.py:24
+msgid "Activity"
+msgstr "الصفة"
+
+#: models.py:25
+#, fuzzy
+msgid "Date of entry"
+msgstr "عدد النتائج: %s"

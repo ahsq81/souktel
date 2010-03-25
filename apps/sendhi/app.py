@@ -6,5 +6,6 @@ class App(rapidsms.app.App):
         keyword = message.text
 
         if keyword.lower() == 'hi':
+
             message.respond(u"you have send %(msg)s" % {'msg': keyword})
             return True
