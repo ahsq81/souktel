@@ -7,8 +7,8 @@ def index(request):
 
     try:
         SrProfile_opj = SrProfile.objects.all()
-        numberof_M = (float) (SrProfile.objects.filter(sex='M').count())/(SrProfile.objects.count())
-        numberof_F = (float) (SrProfile.objects.filter(sex='F').count())/(SrProfile.objects.count())
+        numberof_M = (float) (SrProfile.objects.filter(sex = 'M').count())/(SrProfile.objects.count())
+        numberof_F = (float) (SrProfile.objects.filter(sex = 'F').count())/(SrProfile.objects.count())
 
     except Exception, e:
         print e

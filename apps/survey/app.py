@@ -71,7 +71,7 @@ class App(rapidsms.app.App):
              message.respond(_(u"1-System encountered an Error: %s") % e)
              return False
 
-        ins = SrProfile(first_name = fname, last_name=lname,sex = sex ,age= int(age) ,activity = activity_obj, date = datetime.date.today())
+        ins = SrProfile(first_name = fname, last_name=lname,sex = sex.upper() ,age= int(age) ,activity = activity_obj, date = datetime.date.today())
         try:
             ins.save()
             message.respond(_(u"Recourd saved.."))
