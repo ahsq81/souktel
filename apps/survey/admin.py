@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #vim ai ts=4 sts=4 et sw=4
-
+''' admin U i for the survey Apps'''
 from django.contrib import admin
 from models import SrActivity,SrProfile
 

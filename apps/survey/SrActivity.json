@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "survey.sractivity", "fields": {"code": "emp", "name": "Employee"}}, {"pk": 2, "model": "survey.sractivity", "fields": {"code": "st", "name": "Student"}}]

@@ -1,0 +1,14 @@
+
+Survey
+==========
+
+Description: A rapidsms App to Manages one simple SMS survey.     
+Licence: Public Domain
+
+This Apps Support for function:
+	help: display usage and the format of each instruction  
+	insert: adding new member for the database table   
+	find: look up results from the member table accourding given activity    
+	stat: return number of records 
+
+arabic translation available

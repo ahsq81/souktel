@@ -2,11 +2,16 @@
 # vim: ai ts=4 sts=4 et sw=4 coding=utf-8
 # maintainer: rgaudin
 
+''' Survey Models '''
 
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 class SrActivity(models.Model) :
+    ''' This is the SrActivity models
+    its use to store the activity as a dicionary activity code and description
+
+    '''
 
     code =   models.CharField(max_length=5, unique=True,verbose_name=_(u"Activity Code"))
     name =   models.CharField(max_length=20,verbose_name=_(u"Activity description"))
@@ -15,6 +20,11 @@ class SrActivity(models.Model) :
 	    return u"%s (%s)" % (self.code, self.name)
 
 class SrProfile(models.Model) :
+    '''
+    this is the SrProfile
+    it use to store the the member informations
+
+    '''
 
     first_name = models.CharField(max_length=20,verbose_name=_(u"the first name"))
     last_name=   models.CharField(max_length=20,verbose_name=_(u"the last name"))
